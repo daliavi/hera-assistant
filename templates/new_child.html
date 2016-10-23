@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %} Dependant details {% endblock %}
+
+{% block content %}
+        <h2>Child</h2>
+        <div class="error">{{error}}</div>
+        <form method="post">
+
+            <label>
+                <div>First Name</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Last Name</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Birthday</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Gender</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Birthplace</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Insurance</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Insurance Number</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>Home Address</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+                <div>School Address</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <br>
+            <br>
+            <div>
+                <input type="submit" name="save_post">
+                <input type="submit" name="cancel_new_post" value="Cancel">
+            </div>
+
+        </form>
+{% endblock %}

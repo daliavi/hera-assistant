@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %} User details {% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="text-center"> Hera </h1>
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-6 col-md-offset-3">Mother and Baby Assistant <strong>- using chatbot</strong>. </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="text-justify col-sm-4">  </div>
+    <div class="col-sm-6 text-left">
+      <form method="post">
+          <input type="hidden" name="user_id" value="{{user_id}}">
+            <label>
+                First Name
+            </label>
+            <input type="text" class="input_margin" name="first_name" value="{{first_name}}">
+            <label>
+                Last Name
+            </label>
+            <input type="text" class="input_margin" name="last_name" value="{{last_name}}">
+            <label>
+                Birthday
+            </label>
+            <input type="text" class="input_margin" name="birthday" value="{{birthday}}">
+            <label>
+                Gender
+            </label>
+            <input type="text" class="input_margin" name="gender" value="{{gender}}">
+            <label>
+                Company
+            </label>
+            <input type="text" class="input_margin" name="company" value="{{company}}">
+            <label>
+                Position
+            </label>
+            <input type="text" class="input_margin" name="position" value="{{position}}">
+            <label>
+                Insurance
+            </label>
+            <input type="text" class="input_margin" name="insurance" value="{{insurance}}">
+            <label>
+                Insurance No.
+            </label>
+            <input type="text" class="input_margin" name="insurance_number" value="{{insurance_number}}">
+            <label>
+                Home Address
+            </label>
+            <input type="text" class="input_margin" name="home_address" value="{{home_address}}">
+            <label>
+                Work Address
+            </label>
+            <input type="text" class="input_margin" name="work_address" value="{{work_address}}">
+            <label>
+                Phone Number
+            </label>
+            <input type="text" class="input_margin" name="personal_phone" value="{{personal_phone}}">
+            <label>
+                Emerg. No.
+            </label>
+            <input type="text" class="input_margin" name="emergency_phone" value="{{emergency_phone}}">
+            <br>
+        <input type="submit" class="btn btn-warning btn-sm" name="signup_account" value="Next">
+      </form>
+    </div>
+    <div class="col-sm-4 text-justify">  </div>
+  </div>
+</div>
+  <hr>
+{% endblock %}

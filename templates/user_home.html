@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mother and Baby Assistant - using chatbot. </title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="/">Hera</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav"><!--
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Account<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Online Consultation</a></li>
+            <li class="divider"></li>
+            <li><a href="#">My appointments</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Nursery Care</a></li>
+          </ul>
+        </li>-->
+      </ul><!--
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+        
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+      <ul class="nav navbar-nav navbar-right">
+        <!--<li class="dro"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profiles<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">-->
+            <li class="active"><a href="#">Quick View</a></li>
+            <li><a href="#">Profiles</a></li>
+            
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/personalinfo">Personal Info</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Support</a></li>
+            <li><a href="/">Log Out</a></li>
+            <li class="divider"></li>
+            <li><a href="#"></a></li>
+            
+            <li><a href="#"></a></li>
+         
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2 class="text-center highlight2"> Hi {{user}}, how can I help you today ? </h2>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+
+  <hr>
+  <div class="row text-center">
+    <div class="col-sm-4"> <a href="/consultation">Consult a Doctor online</a> </div>
+    <div class="col-sm-4"> <a href="https://web.ciscospark.com/#/teams/9e1ad410-989b-11e6-9965-3f6bcdbcadc1/rooms/9e1ad410-989b-11e6-9965-3f6bcdbcadc1">Set a medical appointment</a>  </div>
+    <div class="col-sm-4"> <a href="/babysitter">Find a babysitter, now</a>  </div>
+  </div>
+  <hr>
+    <div class="row text-center">
+        <div class="col-sm-12">
+        <h5>Sum up of your family e-health cares over the last 4 weeks.</h5>
+            <br>
+        </div>
+        <div class="col-sm-4 text-left">
+            <strong>Online consultations</strong>
+            <br>
+            10.22.16, Dr Pretel - Lisa
+            <br>
+            10.15.16, Dr Shmutz - John
+            <br>
+            10.12.16, Dr Shmutz - John
+            <br>
+        </div>
+        <div class="col-sm-4 text-left">
+            <strong>Appointments to come</strong>
+            <br>
+            Monday 11.3.16, 8:00 am, Dr Casorn - John’s vaccines
+            <br>
+            Monday 11.10.16, 8:00 am, Dr Casorn - John’s vaccines
+            <br><br>
+
+            <strong>Last appointments</strong>
+            <br>
+            Friday 9.6.16, 8:00am, Dr Casorn - Sara’s radio results
+            <br>
+            Thursday 9.7.16, 6:00 pm, Dr Holio - Radiologist for Sara
+            <br>
+
+        </div>
+        <div class="col-sm-4 text-left">
+            <strong>Babysitters</strong>
+            <br>
+            Samantha Harris, 11.3.16, 8:00-10:00 am - Sara
+            <br>
+            Samantha Harris, 11.10.16, 8:00-10:00 am - Sara
+            <br>
+            Kaitleen Groose, 9.6.16, 8:00-10 am - John
+            <br>
+            Samantha Harris, 9.7.16, 5:30-6:00 pm - John
+
+        </div>
+    </div>
+</div>
+
+  <hr>
+  <div class="row">
+    <div class="text-center col-md-6 col-md-offset-3">
+      <p>&copy; 2016 &middot; Hera. &middot; <br> contact@hera.com</p>
+    </div>
+  </div>
+  <hr>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

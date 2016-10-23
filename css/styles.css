@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1::first-letter { 
+    font-size: 200%;
+    color: #F0AD4E;
+}
+
+label{
+    display:inline-block;
+    width:100px;
+}
+
+.input_margin{
+    margin-right: 5px;
+
+}
+
+.highlight2 {
+    font-size: 140%;
+    color: #F0AD4E;
+}
