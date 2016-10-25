@@ -1,10 +1,8 @@
-import logging
 import os
 import jinja2
 import webapp2
 
 from service import AccountService
-# from service import TBD
 
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir),
@@ -74,7 +72,7 @@ class PersonalInfoHandler(AssistantHandler):
 
 class UserHomeHandler(AssistantHandler):
     def get(self):
-        self.render("user_home.html")
+        self.render("user_home.html", user="Lisa")
 
 
 class SignupHandler(AssistantHandler):
@@ -88,8 +86,7 @@ class SignupHandler(AssistantHandler):
             password = self.request.get("password")
             user_id = AccountService.user_creation(username=username,
                                                 password=password,
-                                                email=email,
-                                                first_name='Lisa'
+                                                email=email
                                                    )
             self.render("new_user.html", username=user_id)
         else:

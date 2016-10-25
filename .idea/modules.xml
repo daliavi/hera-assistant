@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documents/@LadyProblems/hera-assistant/.idea/pacifier-web-assistant.iml" filepath="$USER_HOME$/Documents/@LadyProblems/hera-assistant/.idea/pacifier-web-assistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hera-assistant.iml" filepath="$PROJECT_DIR$/.idea/hera-assistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pacifier-web-assistant.iml" filepath="$PROJECT_DIR$/.idea/pacifier-web-assistant.iml" />
     </modules>
   </component>
 </project>
